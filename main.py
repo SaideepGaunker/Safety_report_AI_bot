@@ -23,14 +23,14 @@ app.add_middleware(
 )
 
 # Gemini API Key (from Google AI Studio)
-GEMINI_API_KEY = "AIzaSyBQn4px9zAFsw5OpmZHqHA3kdCzg2XSViM"  # Replace with your valid API key
+GEMINI_API_KEY = ""  # Replace with your valid API key
 
 # Email setup
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-EMAIL_SENDER = "saideepcoc1@gmail.com"
-EMAIL_PASSWORD = "svws opfe garj xemo"  # Use Gmail App Password (not your raw password)
-EMAIL_RECEIVER = "saigaunker12345@gmail.com"
+EMAIL_SENDER = "example@gmail.com"
+EMAIL_PASSWORD = "app_password"  # Use Gmail App Password (not your raw password)
+EMAIL_RECEIVER = "12345@gmail.com"
 
 # -------- DATA MODEL -------- #
 
