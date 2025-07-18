@@ -43,7 +43,4 @@ This backend is part of a community safety reporting system powered by AI. It is
 
 ---
 
-## 🚀 API Endpoint
 
-# Safety_report_AI_bot
-AI bot 
