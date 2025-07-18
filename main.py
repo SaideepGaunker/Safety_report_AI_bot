@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 import google.generativeai as genai
@@ -7,29 +6,41 @@ from email.mime.text import MIMEText
 from datetime import datetime
 import csv
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 # -------- CONFIGURATION SECTION -------- #
 
+# Initialize FastAPI app
+app = FastAPI()
+
+# ✅ Add CORS middleware to allow requests from Botpress or other frontends
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Replace * with specific domain for security (e.g., ["https://yourbotdomain.com"])
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Gemini API Key (from Google AI Studio)
-GEMINI_API_KEY = "AIzaSyBQn4px9zAFsw5OpmZHqHA3kdCzg2XSViM"
+GEMINI_API_KEY = "AIzaSyBQn4px9zAFsw5OpmZHqHA3kdCzg2XSViM"  # Replace with your valid API key
 
 # Email setup
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_SENDER = "saideepcoc1@gmail.com"
-EMAIL_PASSWORD = "svws opfe garj xemo"  # Use App Password, not raw Gmail password
+EMAIL_PASSWORD = "svws opfe garj xemo"  # Use Gmail App Password (not your raw password)
 EMAIL_RECEIVER = "saigaunker12345@gmail.com"
 
-# --------------------------------------- #
-
-app = FastAPI()
+# -------- DATA MODEL -------- #
 
 class Report(BaseModel):
     location: str
     issue_type: str
     issue_desc: str
 
-# Initialize Gemini
+# -------- GEMINI SETUP -------- #
+
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-pro")
 
@@ -62,7 +73,7 @@ def send_email(summary, location):
         server.login(EMAIL_SENDER, EMAIL_PASSWORD)
         server.sendmail(EMAIL_SENDER, EMAIL_RECEIVER, msg.as_string())
 
-# -------- API ENDPOINT -------- #
+# -------- MAIN API ROUTE -------- #
 
 @app.post("/report")
 async def receive_report(report: Report):
