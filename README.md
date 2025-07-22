@@ -52,5 +52,9 @@ This backend is part of a community safety reporting system powered by AI. It is
 5. Sends an email summary to a pre-defined recipient (e.g., safety department)
 
 ---
+## ✅ Status
+- ✅ Prototype is fully functional
+- ⚠️ Some deployment bugs may arise based on external API changes
+
 
 
