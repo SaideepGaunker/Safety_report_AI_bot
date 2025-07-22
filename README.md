@@ -56,5 +56,11 @@ This backend is part of a community safety reporting system powered by AI. It is
 - ✅ Prototype is fully functional
 - ⚠️ Some deployment bugs may arise based on external API changes
 
+---
+
+Bot Structure and Workflow:
+<img width="1175" height="709" alt="image" src="https://github.com/user-attachments/assets/53bda126-0f26-4b0a-a441-6de5c3f60f95" />
+
+
 
 
