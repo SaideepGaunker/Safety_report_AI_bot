@@ -7,8 +7,7 @@ from email.mime.text import MIMEText
 from datetime import datetime
 import csv
 import os
-from dotenv import load_dotenv
-load_dotenv()
+
 
 app = FastAPI()
 
@@ -22,10 +21,10 @@ app.add_middleware(
 )
 
 # ✅ Config via ENV
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-EMAIL_SENDER = os.getenv("EMAIL_SENDER")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
+GEMINI_API_KEY = AIzaSyBQn4px9zAFsw5OpmZHqHA3kdCzg2XSViM
+EMAIL_SENDER = "saigaunker12345@gmail.com"
+EMAIL_PASSWORD = "whrk uyus qzil hmkh"
+EMAIL_RECEIVER = "saideepgaunker15@gmail.com"
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-pro")
