@@ -15,6 +15,14 @@ This backend is part of a community safety reporting system powered by AI. It is
 
 ---
 
+🚀 Features
+💬 Interactive chatbot built using Botpress
+⚙️ Backend developed using FastAPI
+🤖 AI-powered summaries using Gemini (Google AI Studio)
+📊 Logging system via Google Sheets
+📧 Automated email alerts using SMTP
+☁️ Deployed using Railway for public access
+
 ## ⚙️ Tech Stack
 
 - 🐍 **Python 3.10+**
