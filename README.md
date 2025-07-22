@@ -23,6 +23,8 @@ This backend is part of a community safety reporting system powered by AI. It is
 - 📧 Automated email alerts using SMTP
 - ☁️ Deployed using Railway for public access
 
+---
+
 ## ⚙️ Tech Stack
 
 - 🐍 **Python 3.10+**
