@@ -58,7 +58,7 @@ This backend is part of a community safety reporting system powered by AI. It is
 
 ---
 
-Bot Structure and Workflow:
+## Bot Structure and Workflow:
 <img width="1175" height="709" alt="image" src="https://github.com/user-attachments/assets/53bda126-0f26-4b0a-a441-6de5c3f60f95" />
 
 
