@@ -7,6 +7,8 @@ from email.mime.text import MIMEText
 from datetime import datetime
 import csv
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = FastAPI()
 
