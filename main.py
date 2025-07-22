@@ -20,11 +20,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ✅ Config via ENV
-GEMINI_API_KEY = AIzaSyBQn4px9zAFsw5OpmZHqHA3kdCzg2XSViM
-EMAIL_SENDER = "saigaunker12345@gmail.com"
-EMAIL_PASSWORD = "whrk uyus qzil hmkh"
-EMAIL_RECEIVER = "saideepgaunker15@gmail.com"
+# ✅ Config 
+GEMINI_API_KEY = "" 
+EMAIL_SENDER = "example@gmail.com"
+EMAIL_PASSWORD = "password"
+EMAIL_RECEIVER = "example@gmail.com"
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-pro")
