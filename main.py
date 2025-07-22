@@ -16,21 +16,21 @@ app = FastAPI()
 # ✅ Add CORS middleware to allow requests from Botpress or other frontends
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace * with specific domain for security (e.g., ["https://yourbotdomain.com"])
+    allow_origins=["https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/18/15/20250718154451-PGB3PIJ8.json"],  # Replace * with specific domain for security (e.g., ["https://yourbotdomain.com"])
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/18/15/20250718154451-PGB3PIJ8.json"],
+    allow_headers=["https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/18/15/20250718154451-PGB3PIJ8.json"],
 )
 
 # Gemini API Key (from Google AI Studio)
-GEMINI_API_KEY = ""  # Replace with your valid API key
+GEMINI_API_KEY = "AIzaSyBQn4px9zAFsw5OpmZHqHA3kdCzg2XSViM"  # Replace with your valid API key
 
 # Email setup
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-EMAIL_SENDER = "example@gmail.com"
-EMAIL_PASSWORD = "app_password"  # Use Gmail App Password (not your raw password)
-EMAIL_RECEIVER = "12345@gmail.com"
+EMAIL_SENDER = "saigaunker12345@gmail.com"
+EMAIL_PASSWORD = "whrk uyus qzil hmkh"  # Use Gmail App Password (not your raw password)
+EMAIL_RECEIVER = "saideepgaunker15@gmail.com"
 
 # -------- DATA MODEL -------- #
 
